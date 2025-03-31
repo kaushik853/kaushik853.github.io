@@ -1,28 +1,39 @@
-title: "Kaushik Page"
-author: "Blog Author"
-description: "Made with <b style=\"color: #f45;\">&lt;3</b>"
+title: "Kaushik Pal - Security Architect"
+author: "Kaushik Pal"
+description: "Cloud Security Professional specializing in GCP, AWS, and Infrastructure Security"
 permalink: /:title/
 lang: "en"
 excerpt_separator: "\n\n\n"
 date_format: "%B %d, %Y"
 
 # Layout
-
 show_excerpts: true        # show article excerpts on the home page
 show_frame: true           # adds a gray frame to the site
-show_sidebar: false        # show a sidebar instead of the usual header
+show_sidebar: true         # show a sidebar instead of the usual header
 minimal: false             # use a dark header
 
 # Menu
-
 navigation:                # accepts {file, title, url, icon, sidebaricon}
-  - {file: "index.html"}
-  - {file: "README.md"}
+  - {file: "index.html", title: "Home", icon: home}
+  - {title: "Experience", url: "/experience/", icon: briefcase}
+  - {title: "Certifications", url: "/certifications/", icon: certificate}
+  - {title: "Education", url: "/education/", icon: graduation-cap}
+  - {title: "Skills", url: "/skills/", icon: code}
+  - {title: "Contact", url: "/contact/", icon: envelope}
 
 external:                  # shows a footer with social links - for available icons see fontawesome.com/icons
   - {title: Mail, icon: envelope, url: "mailto:mail@kaushikpal.pro"}
   - {title: Github, icon: github, url: "https://github.com/kaushik853"}
+  - {title: LinkedIn, icon: linkedin, url: "https://www.linkedin.com/in/kaushik-pal-853june1984/"} # Add your LinkedIn URL here
   - {title: Subscribe, icon: rss, url: "/feed.xml"}
+
+# Personal Information - for use in templates
+personal:
+  name: "Kaushik Pal"
+  position: "Security Architect at Deutsche Boerse"
+  location: "Widukind Str 23, 90579 Langenzenn, Germany"
+  phone: "+49 1575 207 0979"
+  email: "mail@kaushikpal.pro"
 
 comments:
 #  disqus_shortname: ""    # see https://disqus.com/
@@ -30,3 +41,4 @@ comments:
 
 plugins:
  - jekyll-feed
+ - jekyll-seo-tag
