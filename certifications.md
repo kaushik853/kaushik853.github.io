@@ -23,3 +23,4 @@ title: Certifications
 ## Additional Training
 
 - Coding Bootcamp with Coding Nomads Python software engineering course
+- C Programming with Linux with Edx
